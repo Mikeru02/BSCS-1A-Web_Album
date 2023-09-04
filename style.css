@@ -1,0 +1,586 @@
+*{
+    margin: 0;
+    padding: 0;
+  }
+  
+  header{
+    position: sticky;
+    top: 0;
+    width: 100%;
+  }
+  
+  body{
+    background-repeat: no-repeat no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  nav{
+    width: 100%;
+    margin: auto;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .logo_picture{
+    width: auto;
+    height: 60px;
+    border-radius: 30px;
+  }
+  
+  .logopicture{
+    width: auto;
+    height: 60px;
+    border-radius: 30px;
+    margin: 0px 10px 0px 10px;
+  }
+  
+  .title{
+    color: #FAFAFA
+  }
+  
+  nav ul{
+    flex: 1;
+    text-align: right;
+  }
+  
+  nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+  }
+  
+  nav ul li a{
+    text-decoration: none;
+    position: relative;
+    font-size: 17px;
+      font-family: 'Gugi';
+    padding: 10px 30px;
+    border-radius: 10px;
+    border-color: #293bc7;
+    color: #FAFAFA;
+    box-shadow: 0 0 40px 40px #293bc7 inset, 0 0 0 0 #293bc7;
+    transition: all 150ms ease-in-out;
+  }
+  nav ul li a:hover {
+      box-shadow: 0 0 10px 0 #293bc7 inset, 0 0 10px 4px #293bc7;
+  }
+  
+  
+  /* Home Page */
+  .maincontent{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 80px;
+  }
+  
+  .cpic{
+    height: 400px;
+    width: auto;
+    border-radius: 20px;
+  }
+  
+  .logoCS{
+    display: flex;
+    align-items: center;
+    margin: 0px 0px 10px 0px;
+  }
+  
+  .logoCS .department{
+    color: #FAFAFA;
+    display: flex;
+    font-size: 35px;
+    margin: 0px 0px 0px 10px;
+  }
+  
+  /* Neon */
+  @font-face{
+    font-family: 'neontubes';
+    src: url("https://bitbucket.org/kennethjensen/webfonts/raw/fc13c1cb430a0e9462da56fe3f421ff7af72db71/neontubes/neontubes-webfont.eot");
+    src: url("https://bitbucket.org/kennethjensen/webfonts/raw/fc13c1cb430a0e9462da56fe3f421ff7af72db71/neontubes/neontubes-webfont.eot?#iefix") format("embedded-opentype"), url("https://bitbucket.org/kennethjensen/webfonts/raw/fc13c1cb430a0e9462da56fe3f421ff7af72db71/neontubes/neontubes-webfont.woff2") format("woff2"), url("https://bitbucket.org/kennethjensen/webfonts/raw/fc13c1cb430a0e9462da56fe3f421ff7af72db71/neontubes/neontubes-webfont.woff") format("woff"), url("https://bitbucket.org/kennethjensen/webfonts/raw/fc13c1cb430a0e9462da56fe3f421ff7af72db71/neontubes/neontubes-webfont.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  .department{
+    display: block;
+    font-family: "neontubes";
+    text-align: center;
+    white-space: nowrap;
+  }
+  
+  .department .p{
+    display: block;
+    position: relative;
+    -webkit-transform: translateZ(0) translate3D(0, 0, 0);
+            transform: translateZ(0) translate3D(0, 0, 0);
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    will-change: opacity;
+  }
+  
+  .CS{
+    padding-right: 10px;
+    color: #FAFAFA;
+    text-shadow: 0 0 0 transparent, 0 0 10px #ff003c, 0 0 20px rgba(255, 0, 60, 0.5), 0 0 40px #ff003c, 0 0 100px #ff003c, 0 0 200px #ff003c, 0 0 300px #ff003c, 0 0 500px #ff003c, 0 0 1000px #ff003c;
+    -webkit-animation: blink 4s infinite alternate;
+            animation: blink 4s infinite alternate;
+  }
+  
+  .Dept{
+    color: #FAFAFA;
+    text-shadow: 0 0 0 transparent, 0 0 10px #2695ff, 0 0 20px rgba(38, 149, 255, 0.5), 0 0 40px #2695ff, 0 0 100px #2695ff, 0 0 200px #2695ff, 0 0 300px #2695ff, 0 0 500px #2695ff;
+    -webkit-animation: buzz 0.01s infinite alternate;
+            animation: buzz 0.01s infinite alternate;
+  }
+  
+  @-webkit-keyframes buzz {
+    70% {
+      opacity: 0.80;
+    }
+  }
+  
+  @keyframes buzz {
+    70% {
+      opacity: 0.80;
+    }
+  }
+  
+  @-webkit-keyframes blink {
+    40% {
+      opacity: 1;
+    }
+    42% {
+      opacity: 0.8;
+    }
+    43% {
+      opacity: 1;
+    }
+    45% {
+      opacity: 0.2;
+    }
+    46% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes blink {
+    40% {
+      opacity: 1;
+    }
+    42% {
+      opacity: 0.8;
+    }
+    43% {
+      opacity: 1;
+    }
+    45% {
+      opacity: 0.2;
+    }
+    46% {
+      opacity: 1;
+    }
+  }
+  
+  .quote{
+    color: #FAFAFA;
+    margin: 10px 0px 20px 0px;
+  }
+  
+  .print{
+    color: #EE4B2B;
+  }
+  
+  .hello{
+    color: #FFA500;
+  }
+  
+  .container{
+    color: #FAFAFA;
+    font-size: 24px;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+  }
+  
+  .stack{
+    display: grid;
+    grid-template-columns: 1fr;
+      font-family:'Press Start 2P', cursive;
+  }
+  
+  .stack span{
+    font-weight: bold;
+    grid-row-start: 1;
+    grid-column-start: 1;
+    font-size: 64px;
+    --stack-height: calc(100% / var(--stacks) - 1px);
+    --inverse-index: calc(calc(var(--stacks) - 1) - var(--index));
+    --clip-top: calc(var(--stack-height) * var(--index));
+    --clip-bottom: calc(var(--stack-height) * var(--inverse-index));
+    clip-path: inset(var(--clip-top) 0 var(--clip-bottom) 0);
+    animation: stack 340ms cubic-bezier(.46,.29,0,1.24) 1 backwards calc(var(--index) * 120ms), glitch 2s ease infinite 2s alternate-reverse;
+  }
+  
+  .stack span:nth-child(odd) { --glitch-translate: 8px; }
+  .stack span:nth-child(even) { --glitch-translate: -8px; }
+  
+  @keyframes stack {
+    0% {
+      opacity: 0;
+      transform: translateX(-50%);
+      text-shadow: -2px 3px 0 red, 2px -3px 0 blue;
+    };
+    60% {
+      opacity: 0.5;
+      transform: translateX(50%);
+    }
+    80% {
+      transform: none;
+      opacity: 1;
+      text-shadow: 2px -3px 0 red, -2px 3px 0 blue;
+    }
+    100% {
+      text-shadow: none;
+    }
+  }
+  
+  @keyframes glitch {
+    0% {
+      text-shadow: -2px 3px 0 red, 2px -3px 0 blue;
+      transform: translate(var(--glitch-translate));
+    }
+    2% {
+      text-shadow: 2px -3px 0 red, -2px 3px 0 blue;
+    }
+    4%, 100% {  text-shadow: none; transform: none; }
+  }
+  
+  .copyright{
+    display: flex;
+    align-items: center;
+    margin: 20px 0 0 0;
+  }
+  
+  .ctext p{
+      font-family: 'Lateef', serif;
+    font-size: 20px;
+    color: #FAFAFA;
+  }
+  
+  .copyright img{
+    height: 30px;
+    width: auto;
+    border-radius: 15px;
+    margin: 0px 10px 0px 0px;
+  }
+  
+  /* Quote */
+  .quote{
+    width: 400px;
+      font-family: 'PT Mono', monospace;
+  }
+  
+  .state{
+      overflow: hidden;
+      border-right: .15em solid orange;
+      white-space: nowrap;
+      margin: 0 auto;
+      letter-spacing: .15em;
+      animation: 
+          typing 8.0s steps(40) infinite, blink-caret 2s infinite;
+          animation-fill-mode: forwards;
+  }
+  
+  @keyframes typing {
+      0% { width: 0% }
+      10% { width: 30% }
+    30% { width: 70% }
+    40% { width: 100% }
+    50% { width: 100% }
+    60% { width: 100% }
+    70% { width: 70% }
+    90% { width: 30% }
+    100% { width: 0% }
+  }
+  
+  @keyframes blink-caret {
+      from { border-color: transparent }
+      to { border-color: orange; }
+  }
+  
+  /* BUTTON */
+  .btn {
+  align-items: center;
+    background-color: #9ab9d5;
+    border: 1px solid #000000;
+    border-radius: 8px;
+    box-sizing: border-box;
+    color: #FAFAFA;
+    cursor: pointer;
+    display: flex;
+    font-family: 'Gugi', cursive;
+    font-size: 16px;
+    height: 48px;
+    justify-content: center;
+    line-height: 24px;
+    max-width: 60%;
+    padding: 0px 25px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+  .btn:after{
+      background-color: #FAFAFA;
+    border-radius: 8px;
+    content: "";
+    display: block;
+    height: 48px;
+    left: 0;
+    width: 100%;
+    position: absolute;
+    top: -2px;
+    transform: translate(8px, 8px);
+    transition: transform .2s ease-out;
+    z-index: -1;
+      text-shadow: 0 0 10px #000000;
+  }
+  
+  .btn:hover:after{
+      transform: translate(0, 0);
+  }
+  
+  .btn:active {
+    background-color: #3431d8;
+    outline: 0;
+  }
+  
+  .btn:hover {
+    outline: 0;
+      box-shadow: 0 0 19px #FAFAFA;
+  }
+  
+  @media (min-width: 768px) {
+    .btn {
+      padding: 0 40px;
+    }
+  }
+  
+  /* Gallery Page */
+  .title-gall{
+      font-family: 'Noto Serif Grantha', serif;
+    text-align: center;
+    background-image: linear-gradient(
+      90deg,
+      rgba(251,249,63,0.5466561624649859) 0%,
+      rgba(229,233,86,1)  29%,
+      rgba(70,116,252,0.9864320728291317) 67%,
+      #fff800 100%
+    );
+    background-size: 200% auto;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 5s linear infinite;
+    font-size: 40px;
+  }
+  
+  @keyframes textclip {
+    to {
+      background-position: 200% center;
+    }
+  }
+  
+  
+  .templates{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+  }
+  
+  .template{
+    height: 400px;
+    width: auto;
+    margin: 20px;
+    transition: transform .5s;
+  }
+  
+  .template:hover{
+    box-shadow: 0 0 19px #FAFAFA;
+    -ms-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+  
+  
+  /* Author Page */
+  .title-auth{
+    text-align: center;
+    font-family: 'neontubes';
+    font-size: 30px;
+  }
+  
+  .authors{
+    display: flex;
+    justify-content: center;
+  }
+  
+  .fauthtext{
+    color: #FAFAFA;
+    font-size: 30px;
+  }
+  
+  .sauthtext{
+    color: #FAFAFA;
+    font-size: 30px;
+  }
+  
+  .authpic{
+    height: 200px;
+    width: auto;
+    border-radius: 100px;
+    margin: 10px;
+  }
+  
+  .slogos{
+    height: 30px;
+    width: auto;
+  }
+  
+  .firstauth{
+    display: flex;
+    align-items: center;
+    margin: 20px;
+  }
+  
+  .secondauth{
+    display: flex;
+    align-items: center;
+    margin: 20px;
+  }
+  
+  .ref{
+    font-size: 30px;
+    text-align: center;
+    font-family: 'neontubes';
+  }
+  
+  .title-auth{
+    padding-right: 10px;
+    color: #FAFAFA;
+    text-shadow: 0 0 0 transparent, 0 0 10px #ff003c, 0 0 20px rgba(255, 0, 60, 0.5), 0 0 40px #ff003c, 0 0 100px #ff003c, 0 0 200px #ff003c, 0 0 300px #ff003c, 0 0 500px #ff003c, 0 0 1000px #ff003c;
+    -webkit-animation: blink 4s infinite alternate;
+            animation: blink 4s infinite alternate;
+  }
+  
+  .ref{
+    color: #FAFAFA;
+    text-shadow: 0 0 0 transparent, 0 0 10px #2695ff, 0 0 20px rgba(38, 149, 255, 0.5), 0 0 40px #2695ff, 0 0 100px #2695ff, 0 0 200px #2695ff, 0 0 300px #2695ff, 0 0 500px #2695ff;
+    -webkit-animation: buzz 0.01s infinite alternate;
+            animation: buzz 0.01s infinite alternate;
+  }
+  
+  @-webkit-keyframes buzz {
+    70% {
+      opacity: 0.80;
+    }
+  }
+  
+  @keyframes buzz {
+    70% {
+      opacity: 0.80;
+    }
+  }
+  
+  @-webkit-keyframes blink {
+    40% {
+      opacity: 1;
+    }
+    42% {
+      opacity: 0.8;
+    }
+    43% {
+      opacity: 1;
+    }
+    45% {
+      opacity: 0.2;
+    }
+    46% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes blink {
+    40% {
+      opacity: 1;
+    }
+    42% {
+      opacity: 0.8;
+    }
+    43% {
+      opacity: 1;
+    }
+    45% {
+      opacity: 0.2;
+    }
+    46% {
+      opacity: 1;
+    }
+  }
+  
+  /*Memories Page*/
+  .mem_title{
+      font-family: 'Noto Serif Grantha', serif;
+    text-align: center;
+    background-image: radial-gradient(circle, rgba(187,70,207,0.6194852941176471) 0%, rgba(216,217,40,0.5466561624649859) 100%);
+    background-size: 200% auto;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 5s linear infinite;
+    font-size: 40px;
+  }
+  
+  .memories{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+  }
+  
+  .memory{
+    height: 400px;
+    width: 600px;
+    margin: 20px;
+    transition: transform .5s;
+  }
+  
+  .memory:hover{
+    box-shadow: 0 0 19px #FAFAFA;
+    -ms-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+  
+  .parti{
+    text-align: center;
+    font-size: 25px;
+    color: #FAFAFA;
+    margin: 20px
+  }
+  
+  .links{
+    text-align: center;
+  }
+  
+  .links li a{
+    color: #FAFAFA;
+    font-size: 20px;
+  }
